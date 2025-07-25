@@ -5,18 +5,14 @@ public class Solution
         int first = int.MaxValue;
         int second = int.MaxValue;
 
-        foreach (int n in nums)
-        {
-            if (n <= first)
-            {
-                first = n;
+        for(int i = 0; i < nums.Length; i++){
+            if(nums[i] <= first){
+                first = nums[i];
             }
-            else if (n <= second)
-            {
-                second = n;
+            else if(nums[i] <= second){
+                second = nums[i];
             }
-            else
-            {
+            else{
                 return true;
             }
         }
