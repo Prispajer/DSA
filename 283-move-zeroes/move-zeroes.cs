@@ -5,12 +5,13 @@ public class Solution {
         int read = 0;
  
             while(read < nums.Length){
-                   while(firstZero < nums.Length && nums[firstZero] != 0){
-                firstZero++;
-            }
+                while(firstZero < nums.Length && nums[firstZero] != 0){
+                    firstZero++;
+                }
 
                 firstNumber = firstZero + 1;
-                while(firstNumber < read && nums[firstNumber] == 0){
+
+                while(firstNumber < nums.Length && nums[firstNumber] == 0){
                     firstNumber++;
                 }
                 
