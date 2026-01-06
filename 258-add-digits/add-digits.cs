@@ -12,12 +12,10 @@ public class Solution
         }
 
         while(numberString.Length != 1){
-            string copyOfString = numberString;
             sum = 0;
-
-            for (int i = 0; i < copyOfString.Length; i++)
+            for (int i = 0; i < numberString.Length; i++)
             {
-                int digit = copyOfString[i] - '0';
+                int digit = numberString[i] - '0';
                 sum += digit;
             } 
             numberString = sum.ToString();
